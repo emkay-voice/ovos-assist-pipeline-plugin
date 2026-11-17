@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-assist-pipeline-plugin"
+version = "0.1.0a1"
+description = "OpenVoiceOS pipeline plugin: what Home Assistant's Assist recognizes (lights, heating, rooms...) goes to Home Assistant"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Andreas Lorensen"}]
+requires-python = ">=3.10"
+keywords = ["ovos", "openvoiceos", "plugin", "pipeline", "intent", "home-assistant", "assist", "emkay"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "ovos-plugin-manager>=1.0.0",
+    "ovos-utils>=0.0.38",
+    "ovos-bus-client>=0.0.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/emkay-voice/ovos-assist-pipeline-plugin"
+Issues = "https://github.com/emkay-voice/ovos-assist-pipeline-plugin/issues"
+Emkay = "https://github.com/emkay-voice/emkay"
+
+[project.entry-points."opm.pipeline"]
+ovos-assist-pipeline-plugin = "ovos_assist_pipeline:AssistPipeline"
+
+[tool.setuptools]
+packages = ["ovos_assist_pipeline"]
