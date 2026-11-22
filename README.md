@@ -43,7 +43,7 @@ The plugin only sends bus messages. The device's **link to Home Assistant**
 does the talking:
 
 - in [Emkay](https://emkay.ai), the page, when Emkay is connected to Home Assistant
-- on an ordinary OVOS, [ovos-phal-plugin-ha-link](https://github.com/andlo/ovos-phal-plugin-ha-link)
+- on an ordinary OVOS, [ovos-phal-plugin-ha-link](https://github.com/emkay-voice/ovos-phal-plugin-ha-link)
 
 So there is no address or token to set here. Without a link, the plugin
 steps aside and the pipeline runs as if it wasn't there.

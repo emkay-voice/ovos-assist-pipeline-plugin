@@ -8,7 +8,7 @@ version = "0.1.0a1"
 description = "OpenVoiceOS pipeline plugin: what Home Assistant's Assist recognizes (lights, heating, rooms...) goes to Home Assistant"
 readme = "README.md"
 license = {text = "Apache-2.0"}
-authors = [{name = "Andreas Lorensen"}]
+authors = [{name = "emkay-voice"}]
 requires-python = ">=3.10"
 keywords = ["ovos", "openvoiceos", "plugin", "pipeline", "intent", "home-assistant", "assist", "emkay"]
 classifiers = [
